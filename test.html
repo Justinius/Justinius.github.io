@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding Two Numbers</title>
+</head>
+<body>
+	<h1>Adding Two Numbers</h1>
+	<form>
+		<label for="FIRST">First Number:</label>
+		<input type="text" id="FIRST" name="FIRST"><br><br>
+
+		<label for="SECOND">Second Number:</label>
+		<input type="text" id="SECOND" name="SECOND"><br><br>
+
+		<button onclick="add()">Add</button><br><br>
+
+		Result: <span id="RESULT"></span>
+	</form>
+
+	<script type="text/javascript">
+		function add() {
+			var first = document.getElementById("FIRST").value;
+			var second = document.getElementById("SECOND").value;
+			var added = parseInt(first) + parseInt(second);
+			document.getElementById("RESULT").innerHTML = added;
+		}
+	</script>
+</body>
+</html>
